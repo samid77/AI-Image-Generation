@@ -16,9 +16,16 @@ const CreatePost = () => {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = () => {}
-  const handleChange = (e) => {}
-  const handleSurpriseMe = () => {}
-  const generateImage = () => {}
+  const handleChange = (e) => {
+    setForm({...form, [e.target.name]: e.target.values})
+  }
+  const handleSurpriseMe = () => {
+    const randomPrompt = getRandomPrompt(form.prompt)
+    setForm({...form, prompt: randomPrompt})
+  }
+  const generateImage = () => {
+    
+  }
 
   return (
     <section className='max-w-7xl mx-auto'>
