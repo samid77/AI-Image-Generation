@@ -2,9 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "backend server for AI Image generation API integration",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/samid77/AI-Image-Generation/issues"
   },
-  "homepage": "https://github.com/samid77/AI-Image-Generation#readme"
+  "homepage": "https://github.com/samid77/AI-Image-Generation#readme",
+  "dependencies": {
+    "cloudinary": "^1.33.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.4",
+    "nodemon": "^2.0.20",
+    "openai": "^3.1.0"
+  }
 }
